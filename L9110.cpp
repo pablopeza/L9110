@@ -13,7 +13,6 @@ L9110::L9110(){
   pinMode(BIB,OUTPUT);
 }
 
-
 void L9110::forward(int l, int r, int t)
 {
   analogWrite(AIA,l);
