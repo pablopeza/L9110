@@ -6,7 +6,7 @@ class L9110 {
     L9110();
     void forward(int l, int r, int t);
     void reverse(int l, int r, int t);
-    void rotate(int t);
+    void rotate(int l, int r, int t);
     void brake(int t);
 };
 #endif
