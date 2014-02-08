@@ -58,3 +58,26 @@ void L9110::brake(int t)
   analogWrite(BIB,0);
   delay(t);
 }
+
+void L9110::drive(int l, int r, int t)
+{
+  if (l>0)
+  {
+    analogWrite(AIA,l);
+    analogWrite(AIB,0);
+  } else {
+    analogWrite(AIA,0);
+    analogWrite(AIB,-l);
+  }
+  
+  if (r>0)
+  {
+    analogWrite(BIA,r);
+    analogWrite(BIB,0);    
+  } else {
+    analogWrite(BIA,0);
+    analogWrite(BIA,-r);
+  }
+  
+  delay(t);
+}
