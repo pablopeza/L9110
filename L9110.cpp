@@ -76,7 +76,7 @@ void L9110::drive(int l, int r, int t)
     analogWrite(BIB,0);    
   } else {
     analogWrite(BIA,0);
-    analogWrite(BIA,-r);
+    analogWrite(BIB,-r);
   }
   
   delay(t);
