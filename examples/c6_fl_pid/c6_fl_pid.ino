@@ -1,4 +1,6 @@
 // siguelíneas con algoritmo PID
+// utiliza seis sensores analógicos en la parte frontal
+// tres a la izquierda y tres a la derecha
 
 #include <L9110.h>
 L9110 c6;
