@@ -8,5 +8,6 @@ class L9110 {
     void reverse(int l, int r, int t);
     void rotate(int l, int r, int t);
     void brake(int t);
+    void drive(int l, int r, int t);
 };
 #endif
