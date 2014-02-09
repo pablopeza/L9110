@@ -5,10 +5,10 @@
 #include <L9110.h>
 L9110 c6;
 
-int forward=80;
-float kp=.032;
+int forward=120;
+float kp=.04;
 float ki=0.00002;
-float kd=0;
+float kd=50;
 float p,d;
 float i=0;
 float p_old=0;
